@@ -51,12 +51,13 @@ const dbConnect = require("./db/dbConnect");
 const routes = require("./routes/routes");
 const users = require("./routes/users");
 const productRouter = require("./routes/products");
-
+const app = express();
+const port = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
    res.send('Hello World');
 });
-const port = process.env.PORT || 3000;
+
 var server = app.listen(port, function () {
   console.log("Ung dung Node.js dang hoat dong tai dia chi")
 });
