@@ -1,10 +1,10 @@
 
 const express = require("express");
-const cors = require('cors')
+// const cors = require('cors')
 // const dbConnect = require("./db/dbConnect");
-const routes = require("./routes/routes");
-const users = require("./routes/users");
-const productRouter = require("./routes/products");
+// const routes = require("./routes/routes");
+// const users = require("./routes/users");
+// const productRouter = require("./routes/products");
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -40,6 +40,10 @@ app.get("/hello", function (req, res) {
 
 // app.use("/api", productRouter);
 
-app.listen(port, (res) => {
-  console.log(`Server Started at ${port}`);
+// app.listen(port, (res) => {
+//   console.log(`Server Started at ${port}`);
+// });
+
+var server = app.listen(port, function () {
+  console.log("Ung dung Node.js dang hoat dong tai dia chi")
 });
