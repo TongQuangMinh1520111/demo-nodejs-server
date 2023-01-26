@@ -34,11 +34,11 @@ app.get("/hello", function (req, res) {
   res.send("hello world !!!");
 });
 
-app.use("/api", routes);
+// app.use("/api", routes);
 
-app.use("/api", users);
+// app.use("/api", users);
 
-app.use("/api", productRouter);
+// app.use("/api", productRouter);
 
 app.listen(port, (res) => {
   console.log(`Server Started at ${port}`);
