@@ -42,5 +42,4 @@ app.use("/api", productRouter);
 
 app.listen(port, (res) => {
   console.log(`Server Started at ${port}`);
-  // process.env.HOST_NAME = 'http://localhost:5000'
 });
