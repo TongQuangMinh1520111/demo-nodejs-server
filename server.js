@@ -46,11 +46,6 @@
 
 
 const express = require("express");
-const cors = require('cors')
-const dbConnect = require("./db/dbConnect");
-const routes = require("./routes/routes");
-const users = require("./routes/users");
-const productRouter = require("./routes/products");
 const app = express();
 const port = process.env.PORT || 3000;
 
