@@ -45,8 +45,13 @@
 // });
 
 
-const express = require('express');
-const app = express();
+const express = require("express");
+const cors = require('cors')
+const dbConnect = require("./db/dbConnect");
+const routes = require("./routes/routes");
+const users = require("./routes/users");
+const productRouter = require("./routes/products");
+
 
 app.get('/', function (req, res) {
    res.send('Hello World');
